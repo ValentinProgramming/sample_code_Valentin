@@ -270,9 +270,9 @@ locations = {
         "Miami",
         "Raleigh",
       ],
-    countriesLocations: ["SE", "UK", "US", "CA"],
+    countriesLocations: ["SE", "UK"], // "US", "CA" CAN ALSO BE SCRAPED, WRITE THEM IN THE ARRAY TO SCRAPE THEM (USLocations WILL ONLY BE USED FOR US)
   };
-careerbuilder.main("Marketing", 1, locations)
+careerbuilder.main("Marketing", 2, locations) // HERE IS THE ACTUAL SCRAPING FUNCTION
 .then((scrapedData)=>{
     // BELOW CODE IS FOR DATA VISUALIZATION PURPOSE FOR THIS ADAPTED VERSION
     const jobs = []
